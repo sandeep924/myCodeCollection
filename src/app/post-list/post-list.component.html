@@ -1,0 +1,7 @@
+<mat-accordion *ngIf="postList?.length > 0">
+  <mat-expansion-panel *ngFor="let item of postList">
+    <mat-expansion-panel-header>{{ item.title }}</mat-expansion-panel-header>
+    <p>{{ item.content }}</p>
+  </mat-expansion-panel>
+</mat-accordion>
+<p *ngIf="postList?.length === 0">No messeges yet</p>
